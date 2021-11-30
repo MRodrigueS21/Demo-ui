@@ -1,0 +1,9 @@
+<nav>
+  <a if.bind="!accountsService.isLoggedIn" load="home">Login</a>
+  <a else click.trigger="accountsService.logout()">Logout</a>
+  <a load="register">Registar</a>
+  <a if.bind="accountsService.isLoggedIn" load="criar">Criar Playlist</a>
+  <a if.bind="accountsService.isLoggedIn" load="listar">Listar Playlist</a>
+</nav>
+
+<au-viewport default="home" fallback="missing-page"></au-viewport>

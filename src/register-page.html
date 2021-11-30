@@ -1,0 +1,13 @@
+<h2>Registar</h2>
+<form submit.trigger="compararPassword()">
+    <label>Username:</label><br>
+    <input type = "text" id = "username" value.bind="account.username" required><p>
+    <label>Password:</label><br>
+    <input type = "password" id = "password" value.bind="account.password" minlength="6" required><p>
+    <label>Repita a Password</label><br>
+    <input type = "password" id = "password1" value.bind="password2" minlength="6" required><br>
+    <div if.bind="account.password!=password2"> Passwords não coincidem</div><p>
+    <label>Nome Completo</label><br>
+    <input type = "text" id = "fullname" value.bind="account.fullname" minlength="10" required><p>
+    <button type = "submit" value = "Registar">Registar</button>
+</form>

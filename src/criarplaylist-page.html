@@ -1,0 +1,9 @@
+<h2>Criar Playlist</h2>
+
+<form submit.trigger="guardar($event)">
+    <label>Nome:</label><br>
+    <input type = "text" id = "name" value.bind="playlists.name" required><br>
+    <label>Descrição:</label><br>
+    <input type = "text" id = "description" value.bind="playlists.description" required><br><br> 
+    <button type = "submit" value = "Guardar" >Guardar</button> 
+</form>

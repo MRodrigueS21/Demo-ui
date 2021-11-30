@@ -1,0 +1,8 @@
+<h1>Listar Playlists</h1>
+
+    <table border = 1>
+        <tr><th>Nome</th><th>Descrição</th></tr>
+        <tr repeat.for="playlist of playlists"><td>${playlist.name}</td>     
+        <td>${playlist.description}</td>
+        </tr>
+    </table>
